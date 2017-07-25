@@ -15,7 +15,7 @@ import GameplayKit
 class GameViewController: UIViewController {
     
     var counter:Int = 0
-
+    var blockspersec = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,13 @@ class GameViewController: UIViewController {
             view.ignoresSiblingOrder = true
             
             view.showsFPS = true
-            view.showsNodeCount = true
+ 
+        }
+
+        while true{
+            counter = counter + blockspersec
+            scoreLabel.text = "\(counter) blocks mined!"
+
         }
     }
     
@@ -53,12 +59,10 @@ class GameViewController: UIViewController {
   
     @IBAction func buttonPressed(_ sender: UIButton) {
     counter = counter + 1
-    scoreLabel.text = "\(counter) cookies!"
+    scoreLabel.text = "\(counter) blocks mined!"
 
     }
+    
+  
 
-    
-    
-    
-    
 }
