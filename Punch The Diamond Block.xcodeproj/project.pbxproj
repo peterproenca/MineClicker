@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		94D8CD001F27A0EA00EA74B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8CCFF1F27A0EA00EA74B9 /* AppDelegate.swift */; };
-		94D8CD021F27A0EA00EA74B9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94D8CD011F27A0EA00EA74B9 /* GameScene.sks */; };
 		94D8CD041F27A0EA00EA74B9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94D8CD031F27A0EA00EA74B9 /* Actions.sks */; };
 		94D8CD061F27A0EA00EA74B9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8CD051F27A0EA00EA74B9 /* GameScene.swift */; };
 		94D8CD081F27A0EB00EA74B9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8CD071F27A0EB00EA74B9 /* GameViewController.swift */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		94D8CCFC1F27A0EA00EA74B9 /* Punch The Diamond Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Punch The Diamond Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D8CCFF1F27A0EA00EA74B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94D8CD011F27A0EA00EA74B9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		94D8CD031F27A0EA00EA74B9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		94D8CD051F27A0EA00EA74B9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		94D8CD071F27A0EB00EA74B9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				94D8CCFF1F27A0EA00EA74B9 /* AppDelegate.swift */,
-				94D8CD011F27A0EA00EA74B9 /* GameScene.sks */,
 				94D8CD031F27A0EA00EA74B9 /* Actions.sks */,
 				94D8CD051F27A0EA00EA74B9 /* GameScene.swift */,
 				94D8CD071F27A0EB00EA74B9 /* GameViewController.swift */,
@@ -134,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D8CD0B1F27A0EB00EA74B9 /* Main.storyboard in Resources */,
-				94D8CD021F27A0EA00EA74B9 /* GameScene.sks in Resources */,
 				94D8CD0D1F27A0EB00EA74B9 /* Assets.xcassets in Resources */,
 				94D8CD101F27A0EB00EA74B9 /* LaunchScreen.storyboard in Resources */,
 				94D8CD041F27A0EA00EA74B9 /* Actions.sks in Resources */,

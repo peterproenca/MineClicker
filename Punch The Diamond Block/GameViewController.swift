@@ -1,17 +1,22 @@
 //
 //  GameViewController.swift
-//  Punch The Diamond Block
+//  bootcamp test
 //
-//  Created by iD Student on 7/25/17.
-//  Copyright © 2017 ID Tech Academy. All rights reserved.
+//  Created by Abdulhakim Ajetunmobi on 29/09/2016.
+//  Copyright © 2016 abdulajet. All rights reserved.
 //
+
 
 import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController {
 
+class GameViewController: UIViewController {
+    
+    var counter:Int = 0
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,25 +36,29 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
+    
 
-    override var shouldAutorotate: Bool {
-        return true
-    }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    
+    
+  
+    @IBAction func buttonPressed(_ sender: UIButton) {
+    counter = counter + 1
+    scoreLabel.text = "\(counter) cookies!"
+
     }
 
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
+    
+    
+    
+    
 }
