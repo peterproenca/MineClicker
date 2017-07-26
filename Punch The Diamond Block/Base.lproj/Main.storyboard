@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8P3-u6-Yb1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,8 +25,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tingyyyyyyyyyyyywd qwdawd ad" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-un-csw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-0X-xHs">
+                                <rect key="frame" x="75" y="179" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cookie"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZpS-pG-JsQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwi-gx-h8U">
-                                <rect key="frame" x="47" y="47" width="52" height="30"/>
+                                <rect key="frame" x="47" y="64" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2+ BPC"/>
                                 <connections>
@@ -34,12 +42,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzs-5S-RAc">
-                                <rect key="frame" x="294" y="47" width="59" height="30"/>
+                                <rect key="frame" x="292" y="64" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="10+ BPC"/>
+                                <connections>
+                                    <action selector="multiplierThree:" destination="BV1-FR-VrT" eventType="touchUpInside" id="y1X-4y-WaC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0 Diamonds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-bk-RIH">
-                                <rect key="frame" x="126" y="487" width="213" height="32"/>
+                                <rect key="frame" x="178" y="498" width="213" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.97646130181347146" green="0.74605751530097064" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,51 +77,47 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chn-bo-nfc">
-                                <rect key="frame" x="162" y="47" width="52" height="30"/>
+                                <rect key="frame" x="162" y="64" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="5+ BPC"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS1-W4-FoQ">
-                                <rect key="frame" x="331" y="637" width="30" height="30"/>
                                 <connections>
-                                    <action selector="cheatCode:" destination="BV1-FR-VrT" eventType="touchUpInside" id="GLi-Ss-MXi"/>
+                                    <action selector="multiplierTwo:" destination="BV1-FR-VrT" eventType="touchUpInside" id="kh9-ru-PsU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zm8-Be-H7X">
-                                <rect key="frame" x="4" y="637" width="39" height="30"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="1" green="0.29831569127896695" blue="0.18488196302521287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-lj-Ihk">
+                                <rect key="frame" x="88" y="538" width="200" height="200"/>
+                                <state key="normal" title="Button" image="rreeeestarttt"/>
                                 <connections>
-                                    <action selector="resetButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="T8p-aM-MHd"/>
+                                    <action selector="restartButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="y3X-Qc-ew8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-0X-xHs">
-                                <rect key="frame" x="75" y="179" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="cookie"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZpS-pG-JsQ"/>
-                                </connections>
-                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exo-uN-MuD">
+                                <rect key="frame" x="1" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Mine Clicker" id="AnW-lb-RQb">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Oub-QX-EJ1">
+                                            <connections>
+                                                <segue destination="8P3-u6-Yb1" kind="show" id="CHz-Zu-RU0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.97646130181347146" blue="0.25782686439423447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="x1R-un-csw" secondAttribute="bottom" id="7Gp-ol-TOd"/>
                             <constraint firstItem="x1R-un-csw" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="-20" id="FAM-E3-mYE"/>
-                            <constraint firstItem="zm8-Be-H7X" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="617" id="FCm-iy-eP5"/>
-                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="zm8-Be-H7X" secondAttribute="bottom" id="Hdu-FO-XB6"/>
                             <constraint firstItem="yAN-bk-RIH" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="146" id="Ie0-HG-HDf"/>
-                            <constraint firstItem="TS1-W4-FoQ" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="617" id="Jmi-42-n9E"/>
+                            <constraint firstItem="DdV-lj-Ihk" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="72" id="Ie3-N9-Zde"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DdV-lj-Ihk" secondAttribute="trailing" constant="71" id="NGb-An-yzB"/>
+                            <constraint firstItem="DdV-lj-Ihk" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="518" id="QJo-y1-azk"/>
                             <constraint firstItem="x1R-un-csw" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="VSS-yu-Fs2"/>
-                            <constraint firstItem="TS1-W4-FoQ" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="315" id="Y3O-Xc-08J"/>
                             <constraint firstItem="yAN-bk-RIH" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="465" id="bAI-O2-E6u"/>
-                            <constraint firstItem="zm8-Be-H7X" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-12" id="dK8-nG-ti7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TS1-W4-FoQ" secondAttribute="trailing" constant="-2" id="ddZ-iA-pzD"/>
-                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="TS1-W4-FoQ" secondAttribute="bottom" id="dqM-xM-Eqd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zm8-Be-H7X" secondAttribute="trailing" constant="316" id="dvD-E8-fF8"/>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="yAN-bk-RIH" secondAttribute="bottom" constant="150" id="hPN-Vr-2hz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x1R-un-csw" secondAttribute="trailing" constant="-16" id="mEW-wv-T27"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="DdV-lj-Ihk" secondAttribute="bottom" constant="-71" id="o9x-cX-e8e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yAN-bk-RIH" secondAttribute="trailing" constant="-16" id="zDd-cf-8PK"/>
                         </constraints>
                     </view>
@@ -122,9 +129,77 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
+        <!--Game View Controller-->
+        <scene sceneID="7BD-3E-Xjr">
+            <objects>
+                <viewController id="8P3-u6-Yb1" customClass="GameViewController" customModule="Punch_The_Diamond_Block" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKu-lo-f7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ng-WL-3G9"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SGT-FV-BCW" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wyk-p0-t1C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Home" id="hYY-ZF-Lix"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome To Cookie Clickers!!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNf-H6-sPJ">
+                                <rect key="frame" x="81" y="83" width="213" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="J6m-Kr-n8K">
+                                <rect key="frame" x="94" y="168" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is an app that offers 2 different variations of Cookie Clicker! We hope you enjoy! More updates coming soon!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-OP-EAP">
+                                <rect key="frame" x="67" y="376" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsW-hi-2zf">
+                                <rect key="frame" x="140" y="531" width="94" height="30"/>
+                                <state key="normal" title="Miner Clicker "/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="xY0-r7-FKN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-PS-R96">
+                                <rect key="frame" x="137" y="569" width="100" height="30"/>
+                                <state key="normal" title="Soccer Clicker"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97646130180000001" blue="0.25782686440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.81409218867438893" blue="0.059986076565189617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xsW-hi-2zf" firstAttribute="centerX" secondItem="SGT-FV-BCW" secondAttribute="centerX" id="8QJ-Il-eQY"/>
+                            <constraint firstItem="jNf-H6-sPJ" firstAttribute="width" secondItem="SGT-FV-BCW" secondAttribute="width" id="8a2-7t-qV2"/>
+                            <constraint firstItem="7Ng-WL-3G9" firstAttribute="top" secondItem="xsW-hi-2zf" secondAttribute="bottom" constant="137" id="GIA-w7-2q9"/>
+                            <constraint firstItem="7Ng-WL-3G9" firstAttribute="top" secondItem="hNp-PS-R96" secondAttribute="bottom" constant="68" id="Hd1-64-sMx"/>
+                            <constraint firstItem="hNp-PS-R96" firstAttribute="centerX" secondItem="SGT-FV-BCW" secondAttribute="centerX" id="Htt-4i-9CN"/>
+                            <constraint firstItem="7Ng-WL-3G9" firstAttribute="top" secondItem="xsW-hi-2zf" secondAttribute="bottom" constant="137" id="Vcn-2p-FSz"/>
+                            <constraint firstItem="jNf-H6-sPJ" firstAttribute="width" secondItem="SGT-FV-BCW" secondAttribute="width" id="sg8-wS-0xR"/>
+                            <constraint firstItem="7Ng-WL-3G9" firstAttribute="top" secondItem="hNp-PS-R96" secondAttribute="bottom" constant="68" id="xpt-PJ-P9r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jv-Vv-TDR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742" y="808"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cookie" width="1000" height="1000"/>
+        <image name="rreeeestarttt" width="2000" height="1500"/>
         <image name="tingyyyyyyyyyyyywd qwdawd ad" width="375" height="667"/>
+        <image name="unnamed" width="300" height="300"/>
     </resources>
 </document>

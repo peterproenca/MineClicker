@@ -59,15 +59,9 @@ class GameViewController: UIViewController {
     scoreLabel.text = "\(counter) Diamonds"
 
     }
-    @IBAction func cheatCode(_ sender: UIButton) {
-        counter = counter + 100
-        scoreLabel.text = "\(counter) Diamonds"
-    }
+
     
-    @IBAction func resetButton(_ sender: UIButton) {
-        counter = 0
-        scoreLabel.text = "\(counter) Diamonds"
-    }
+
     @IBAction func multiplierOne(_ sender: UIButton) {
         if counter >= 100 {
     
@@ -77,6 +71,32 @@ class GameViewController: UIViewController {
         }
 
           scoreLabel.text = "\(counter) Diamonds"
+    }
+    @IBAction func multiplierTwo(_ sender: UIButton) {
+        if counter >= 1000 {
+            multiplier = multiplier + 5
+            counter = counter - 1000
+            scoreLabel.text = "\(counter) Diamonds"
+        }
+        scoreLabel.text = "\(counter) Diamonds"
+    }
+    
+    @IBAction func multiplierThree(_ sender: UIButton) {
+        if counter >= 10000 {
+            multiplier = multiplier + 10
+            counter = counter - 10000
+            scoreLabel.text = "\(counter) Diamonds"
+        }
+        scoreLabel.text = "\(counter) Diamonds"
+    }
+    
+
+
+    
+    @IBAction func restartButton(_ sender: UIButton) {
+        counter = 0
+        multiplier = 0
+        scoreLabel.text = "\(counter) Diamonds"
     }
  
 }
