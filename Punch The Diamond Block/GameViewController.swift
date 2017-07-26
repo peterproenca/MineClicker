@@ -15,11 +15,13 @@ import GameplayKit
 class GameViewController: UIViewController {
     
     var counter:Int = 0
-    var blockspersec = 1
+    var blockspersec = 0
+    var multiplier = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -36,11 +38,6 @@ class GameViewController: UIViewController {
  
         }
 
-        while true{
-            counter = counter + blockspersec
-            scoreLabel.text = "\(counter) blocks mined!"
-
-        }
     }
     
 
@@ -58,11 +55,28 @@ class GameViewController: UIViewController {
     
   
     @IBAction func buttonPressed(_ sender: UIButton) {
-    counter = counter + 1
-    scoreLabel.text = "\(counter) blocks mined!"
+    counter = counter + 1 + multiplier
+    scoreLabel.text = "\(counter) Diamonds"
 
     }
+    @IBAction func cheatCode(_ sender: UIButton) {
+        counter = counter + 100
+        scoreLabel.text = "\(counter) Diamonds"
+    }
     
-  
+    @IBAction func resetButton(_ sender: UIButton) {
+        counter = 0
+        scoreLabel.text = "\(counter) Diamonds"
+    }
+    @IBAction func multiplierOne(_ sender: UIButton) {
+        if counter >= 100 {
+    
+            multiplier = multiplier + 2
+            counter = counter - 100
+            scoreLabel.text = "\(counter) Diamonds"
+        }
 
+          scoreLabel.text = "\(counter) Diamonds"
+    }
+ 
 }
